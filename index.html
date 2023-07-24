@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vehicle cart</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="image">
+            <img src="https://imgd.aeplcdn.com/370x208/n/rlnhbua_1541087.jpg?q=75" alt="" height="200px" width="400px" id="img">
+        </div>
+        <div id="details">
+            <h2>Mercedes Benz S Class 2023</h2>
+            <table>
+                <tr>
+                    <td>🚗</td>
+                    <td>Mileage:</td>
+                    <td>4000 miles</td>
+                </tr>
+                <tr>
+                    <td>⛽</td>
+                    <td>Fuel:</td>
+                    <td>25 mpg</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Safety:</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p>Pick a color :</p>
+            <button id="black" onclick="cblack()"></button>
+            <button id="silver" onclick="csilver()"></button>
+            <button id="grey" onclick="cgrey()"></button>
+            <button id="blue" onclick="cblue()"></button>
+        </div>
+        <div class="cartsystem">
+            <input type="button" value="Add the cart" onclick="addingtocart" id="cartbutton">
+        </div>
+    </div>
+
+
+    <script>
+        cgrey = () => document.getElementById("img").setAttribute("src", "https://imgd.aeplcdn.com/370x208/n/i68hbua_1541081.jpg?q=75")
+        cblue = () => document.getElementById("img").setAttribute("src", "https://imgd.aeplcdn.com/370x208/n/rlnhbua_1541087.jpg?q=75")
+        csilver = () => document.getElementById("img").setAttribute("src", "https://imgd.aeplcdn.com/370x208/n/q16hbua_1541089.jpg?q=75")
+        cblack = () => document.getElementById("img").setAttribute("src", "https://imgd.aeplcdn.com/370x208/n/y2ehbua_1541075.jpg?q=75")
+        addingtocart = () => document.getElementsByTagName("input").setAttribute("value", "Added to cart successfully")
+    </script>
+</body>
+</html>
