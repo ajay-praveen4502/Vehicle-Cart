@@ -39,7 +39,7 @@
             <button id="blue" onclick="cblue()"></button>
         </div>
         <div class="cartsystem">
-            <input type="button" value="Add the cart" onclick="addingtocart" id="cartbutton">
+            <button id="clk">Add to cart</button>
         </div>
     </div>
 
@@ -49,7 +49,12 @@
         cblue = () => document.getElementById("img").setAttribute("src", "https://imgd.aeplcdn.com/370x208/n/rlnhbua_1541087.jpg?q=75")
         csilver = () => document.getElementById("img").setAttribute("src", "https://imgd.aeplcdn.com/370x208/n/q16hbua_1541089.jpg?q=75")
         cblack = () => document.getElementById("img").setAttribute("src", "https://imgd.aeplcdn.com/370x208/n/y2ehbua_1541075.jpg?q=75")
-        addingtocart = () => document.getElementsByTagName("input").setAttribute("value", "Added to cart successfully")
+        const clk1=document.querySelector("#clk");
+        clk1.addEventListener("click",function(){
+            clk1.textContent="Added to cart";
+            event.target.style.backgroundColor = 'white';
+            event.target.style.color = 'black';
+        }); 
     </script>
 </body>
 </html>
